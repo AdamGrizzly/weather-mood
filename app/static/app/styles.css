@@ -1,0 +1,83 @@
+.name_todo{
+    color: transparent;
+
+  -webkit-text-stroke: .07em rgba(0,0,0,.5);
+}
+.todo{
+    width: 70%;
+    margin-left: 15%;
+    background: transparent;
+    z-index: 2;
+    position: absolute;
+    border: 2px solid rgba(0,0,0,.5);
+    height: auto;
+    padding-bottom: 2%;
+    margin-top: 5%;
+
+}
+header{
+    border-bottom: 2px solid  rgba(0,0,0,.5);
+}
+a{
+    text-align: center;
+    color: white;
+}
+a:hover{
+    color: white;
+}
+h1{
+    color: transparent;
+    text-align: center;
+  -webkit-text-stroke: .07em rgba(0,0,0,.5);
+}
+button{
+    margin-top: 2%;
+    width: 20%;
+    margin-left: 40%;
+    color: white;
+    border: 2px solid rgba(0,0,0,.5);
+    border-radius: 5px;
+    background: transparent;
+    margin-bottom: 2%;
+}
+.form-group{
+    width: 40%;
+    margin-left: 30%;
+}
+.btn-default{
+    width: 50%;
+    color: white;
+    border: 2px solid rgba(0,0,0,.5);
+    border-radius: 5px;
+    background: transparent;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.btn-default:hover{
+    background: transparent;
+     border: 2px solid rgba(0,0,0,.5);
+}
+p{
+    color: white;
+    margin-left: 13%;
+}
+.task{
+    color: white;
+    font-size: 1.4em;
+}
+ul{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    border-bottom: 2px solid  rgba(0,0,0,.5);;
+    margin-bottom: 3%;
+}
+li{
+    list-style-type: none;
+}
+option, select{
+    color: black;
+}
+#id_today, #id_coment{
+    color: black;
+}

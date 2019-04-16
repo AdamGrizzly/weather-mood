@@ -1,0 +1,25 @@
+{% extends './base.html' %}
+
+
+{% block content %}
+  {% for weather in weather_list %}
+    {% if weather.zaryadka == True %}
+      <ul class="task-block">
+        <li class="task"><a href="{% url 'weather_detail' pk=weather.pk %}">Как прошел день: </BR>{{ weather.coment }}</a></li>
+        <li class="status done">Сделал зарядку</li>
+        <li class="status done">Уровень настроения: {{ weather.smile}}</li>
+        <li class="status done">Дата: {{ weather.today}}</li>
+
+      </ul>
+    {% endif %}
+    {% if weather.zaryadka == False %}
+      <ul class="task-block">
+        <li class="task"><a href="{% url 'weather_detail' pk=weather.pk %}">Как прошел день: </BR>{{ weather.coment }}</a></li>
+        <li class="status canceled">Не сделал зарядку</li>
+        <li class="status done">Уровень настроения: {{ weather.smile}}</li>
+        <li class="status done">Дата: {{ weather.today}}</li>
+        
+      </ul>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
